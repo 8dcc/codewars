@@ -1,0 +1,15 @@
+[submodule "codewars-c"]
+	path = codewars-c
+	url = https://github.com/r4v10l1/codewars-c
+[submodule "codewars-brainfuck"]
+	path = codewars-brainfuck
+	url = https://github.com/r4v10l1/codewars-brainfuck
+[submodule "codewars-shell"]
+	path = codewars-shell
+	url = https://github.com/r4v10l1/codewars-shell
+[submodule "codewars-python"]
+	path = codewars-python
+	url = https://github.com/r4v10l1/codewars-python
+[submodule "codewars-rust"]
+	path = codewars-rust
+	url = https://github.com/r4v10l1/codewars-rust
