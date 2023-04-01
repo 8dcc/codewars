@@ -102,6 +102,24 @@ def pull_repo_c():
     repo_origin.pull()
     cprint_pulled(Fore.BLUE, "C", commits_to_pull)
 
+def pull_repo_asm():
+    repo_path = "%s/codewars-asm" % main_repo_path
+    try:
+        repo = git.Repo(repo_path)
+    except Exception:
+        cprint_error("I can't find a repo in %s" % (repo_path))
+        cprint_error_suggestion()
+        exit(1)
+    if repo.head.is_detached:
+        cprint_detached(Fore.BLUE, "ASM")
+        repo.git.checkout("main")
+    repo_origin = repo.remotes.origin
+    cprint_pulling(Fore.BLUE, "ASM", "r4v10l1/codewars-asm")
+    repo_origin.fetch()
+    commits_to_pull = repo.git.rev_list("--count", "HEAD..origin/main")
+    repo_origin.pull()
+    cprint_pulled(Fore.BLUE, "ASM", commits_to_pull)
+
 def pull_repo_sh():
     repo_path = "%s/codewars-shell" % main_repo_path
     try:

@@ -15,3 +15,4 @@ git submodule foreach git checkout main
 echo -e "\n${bold_t}[${norm_t}sync-dotfiles${bold_t}] Pulling remote repositories...${norm_t}\n"
 git submodule foreach git pull origin main
 echo -e "\n${bold_t}[${norm_t}sync-dotfiles${bold_t}] All done!${norm_t}\n"
+
