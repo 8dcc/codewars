@@ -13,3 +13,6 @@
 [submodule "codewars-rust"]
 	path = codewars-rust
 	url = https://github.com/r4v10l1/codewars-rust
+[submodule "codewars-asm"]
+	path = codewars-asm
+	url = https://github.com/8dcc/codewars-asm
